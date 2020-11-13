@@ -6,7 +6,7 @@ Just a compendium of Ethereum Smart Contracts I have created or I use.
 
 Install the following:
 
-* [https://www.trufflesuite.com/truffle](Truffle)
-* [https://metamask.io/](MetaMask)
+* [Truffle](https://www.trufflesuite.com/truffle)
+* [MetaMask](https://metamask.io/)
 
-Or just "copy & paste" the contracts into [https://remix.ethereum.org](Remix IDE).
+Or just "copy & paste" the contracts into [Remix IDE](https://remix.ethereum.org).
