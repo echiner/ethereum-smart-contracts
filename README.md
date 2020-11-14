@@ -36,9 +36,11 @@ truffle migrate
 
 ## Next steps
 
-* Deploying a different Smart Contract
-  * Edit `1_initial_migration.js` and update or add other contracts.
-* Deploying somewhere else
+Where to go from here? These are some tips which might help.
+
+* **Deploying a different Smart Contract**
+  * Edit `migrations/1_initial_migration.js` and update or add other contracts.
+* **Deploying somewhere else**
   * Edit `truffle-config.js` and setup a new network (local node, testnet or mainnet!)
-* Develop your own Smart Contracts
+* **Develop your own Smart Contracts**
   * Use Visual Studio Code (the ['solidity' extension](https://marketplace.visualstudio.com/items?itemName=JuanBlanco.solidity) helps) and open this project. Then just edit your Smart Contracts.
