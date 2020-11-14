@@ -1,0 +1,860 @@
+{
+  "contractName": "SimpleSmartContract",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "poke",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getNumPokes",
+      "outputs": [
+        {
+          "internalType": "int256",
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "hello",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"getNumPokes\",\"outputs\":[{\"internalType\":\"int256\",\"name\":\"\",\"type\":\"int256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"hello\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"poke\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"Store & retreive value in a variable\",\"methods\":{\"getNumPokes()\":{\"details\":\"Get the number of getNumPokes\",\"return\":\"Number of pokes\"},\"hello()\":{\"details\":\"Say hi to the class\",\"return\":\"A greeting\"},\"poke()\":{\"details\":\"Increase the number of pokes\"}},\"title\":\"Blockchain Session\"},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/encr/OneDrive - GFT Technologies SE/Documents/Developer/ethereum-smart-contracts/contracts/SimpleSmartContract.sol\":\"SimpleSmartContract\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/encr/OneDrive - GFT Technologies SE/Documents/Developer/ethereum-smart-contracts/contracts/SimpleSmartContract.sol\":{\"keccak256\":\"0x46bd2fa569bc89ab30c859914615164401021336f9056f16d8780b765c089ca8\",\"urls\":[\"bzz-raw://c0d8c6aa84ebf2fcf1e8e38bfe6db45e60c5347d8495f035cfd0500c8d5d6d4d\",\"dweb:/ipfs/QmPGB2y6JqCjyiRhseLar411zUdMtgzR5xS41wTBpCNjnu\"]}},\"version\":1}",
+  "bytecode": "0x60806040526040518060600160405280602f81526020016102d8602f913960019080519060200190610032929190610045565b5034801561003f57600080fd5b506100ea565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061008657805160ff19168380011785556100b4565b828001600101855582156100b4579182015b828111156100b3578251825591602001919060010190610098565b5b5090506100c191906100c5565b5090565b6100e791905b808211156100e35760008160009055506001016100cb565b5090565b90565b6101df806100f96000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c8063181783581461004657806319ff1d2114610050578063d5aa5a03146100d3575b600080fd5b61004e6100f1565b005b6100586100ff565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561009857808201518184015260208101905061007d565b50505050905090810190601f1680156100c55780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6100db6101a1565b6040518082815260200191505060405180910390f35b600160005401600081905550565b606060018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156101975780601f1061016c57610100808354040283529160200191610197565b820191906000526020600020905b81548152906001019060200180831161017a57829003601f168201915b5050505050905090565b6000805490509056fea265627a7a72315820851dd7d4b06c0e55c36c436f3a544f977bb09cb2df176d1deddea4f8c9a69fe264736f6c63430005100032486920677579732121212057656c636f6d6520746f2074686520426c6f636b636861696e2073657373696f6e212121",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100415760003560e01c8063181783581461004657806319ff1d2114610050578063d5aa5a03146100d3575b600080fd5b61004e6100f1565b005b6100586100ff565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561009857808201518184015260208101905061007d565b50505050905090810190601f1680156100c55780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6100db6101a1565b6040518082815260200191505060405180910390f35b600160005401600081905550565b606060018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156101975780601f1061016c57610100808354040283529160200191610197565b820191906000526020600020905b81548152906001019060200180831161017a57829003601f168201915b5050505050905090565b6000805490509056fea265627a7a72315820851dd7d4b06c0e55c36c436f3a544f977bb09cb2df176d1deddea4f8c9a69fe264736f6c63430005100032",
+  "sourceMap": "122:622:3:-;;;180:67;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;122:622;8:9:-1;5:2;;;30:1;27;20:12;5:2;122:622:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
+  "deployedSourceMap": "122:622:3:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;122:622:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;316:67;;;:::i;:::-;;654:87;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;654:87:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;484:84;;;:::i;:::-;;;;;;;;;;;;;;;;;;;316:67;374:1;362:9;;:13;350:9;:25;;;;316:67::o;654:87::-;692:13;725:8;718:15;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;654:87;:::o;484:84::-;528:3;551:9;;544:16;;484:84;:::o",
+  "source": "pragma solidity >=0.4.22 <0.8.0;\r\n\r\n/**\r\n * @title Blockchain Session\r\n * @dev Store & retreive value in a variable\r\n */\r\ncontract SimpleSmartContract {\r\n\r\n    int pokeCount;\r\n    string greeting = \"Hi guys!!! Welcome to the Blockchain session!!!\";\r\n\r\n    /**\r\n     * @dev Increase the number of pokes\r\n     */\r\n    function poke() public {\r\n        pokeCount = pokeCount + 1;\r\n    }\r\n\r\n    /**\r\n     * @dev Get the number of getNumPokes\r\n     * @return Number of pokes\r\n     */\r\n    function getNumPokes() public view returns (int) {\r\n        return pokeCount;\r\n    }\r\n\r\n    /**\r\n     * @dev Say hi to the class\r\n     * @return A greeting\r\n     */\r\n    function hello() public view returns (string memory) {\r\n        return greeting;\r\n    }\r\n}",
+  "sourcePath": "C:/Users/encr/OneDrive - GFT Technologies SE/Documents/Developer/ethereum-smart-contracts/contracts/SimpleSmartContract.sol",
+  "ast": {
+    "absolutePath": "/C/Users/encr/OneDrive - GFT Technologies SE/Documents/Developer/ethereum-smart-contracts/contracts/SimpleSmartContract.sol",
+    "exportedSymbols": {
+      "SimpleSmartContract": [
+        841
+      ]
+    },
+    "id": 842,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 809,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:32:3"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": "@title Blockchain Session\n@dev Store & retreive value in a variable",
+        "fullyImplemented": true,
+        "id": 841,
+        "linearizedBaseContracts": [
+          841
+        ],
+        "name": "SimpleSmartContract",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 811,
+            "name": "pokeCount",
+            "nodeType": "VariableDeclaration",
+            "scope": 841,
+            "src": "160:13:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_int256",
+              "typeString": "int256"
+            },
+            "typeName": {
+              "id": 810,
+              "name": "int",
+              "nodeType": "ElementaryTypeName",
+              "src": "160:3:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_int256",
+                "typeString": "int256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 814,
+            "name": "greeting",
+            "nodeType": "VariableDeclaration",
+            "scope": 841,
+            "src": "180:67:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 812,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "180:6:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "486920677579732121212057656c636f6d6520746f2074686520426c6f636b636861696e2073657373696f6e212121",
+              "id": 813,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "string",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "198:49:3",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_stringliteral_cf68fc6f9719044ad3f951518f506adc318407289fc60306f8a627e177935d98",
+                "typeString": "literal_string \"Hi guys!!! Welcome to the Blockchain session!!!\""
+              },
+              "value": "Hi guys!!! Welcome to the Blockchain session!!!"
+            },
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 823,
+              "nodeType": "Block",
+              "src": "339:44:3",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 821,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 817,
+                      "name": "pokeCount",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 811,
+                      "src": "350:9:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_int256",
+                        "typeString": "int256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "commonType": {
+                        "typeIdentifier": "t_int256",
+                        "typeString": "int256"
+                      },
+                      "id": 820,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "leftExpression": {
+                        "argumentTypes": null,
+                        "id": 818,
+                        "name": "pokeCount",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 811,
+                        "src": "362:9:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_int256",
+                          "typeString": "int256"
+                        }
+                      },
+                      "nodeType": "BinaryOperation",
+                      "operator": "+",
+                      "rightExpression": {
+                        "argumentTypes": null,
+                        "hexValue": "31",
+                        "id": 819,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "374:1:3",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_1_by_1",
+                          "typeString": "int_const 1"
+                        },
+                        "value": "1"
+                      },
+                      "src": "362:13:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_int256",
+                        "typeString": "int256"
+                      }
+                    },
+                    "src": "350:25:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "id": 822,
+                  "nodeType": "ExpressionStatement",
+                  "src": "350:25:3"
+                }
+              ]
+            },
+            "documentation": "@dev Increase the number of pokes",
+            "id": 824,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "poke",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 815,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "329:2:3"
+            },
+            "returnParameters": {
+              "id": 816,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "339:0:3"
+            },
+            "scope": 841,
+            "src": "316:67:3",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 831,
+              "nodeType": "Block",
+              "src": "533:35:3",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 829,
+                    "name": "pokeCount",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 811,
+                    "src": "551:9:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "functionReturnParameters": 828,
+                  "id": 830,
+                  "nodeType": "Return",
+                  "src": "544:16:3"
+                }
+              ]
+            },
+            "documentation": "@dev Get the number of getNumPokes\n@return Number of pokes",
+            "id": 832,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getNumPokes",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 825,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "504:2:3"
+            },
+            "returnParameters": {
+              "id": 828,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 827,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 832,
+                  "src": "528:3:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 826,
+                    "name": "int",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "528:3:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "527:5:3"
+            },
+            "scope": 841,
+            "src": "484:84:3",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 839,
+              "nodeType": "Block",
+              "src": "707:34:3",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 837,
+                    "name": "greeting",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 814,
+                    "src": "725:8:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "functionReturnParameters": 836,
+                  "id": 838,
+                  "nodeType": "Return",
+                  "src": "718:15:3"
+                }
+              ]
+            },
+            "documentation": "@dev Say hi to the class\n@return A greeting",
+            "id": 840,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "hello",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 833,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "668:2:3"
+            },
+            "returnParameters": {
+              "id": 836,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 835,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 840,
+                  "src": "692:13:3",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 834,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "692:6:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "691:15:3"
+            },
+            "scope": 841,
+            "src": "654:87:3",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 842,
+        "src": "122:622:3"
+      }
+    ],
+    "src": "0:744:3"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/encr/OneDrive - GFT Technologies SE/Documents/Developer/ethereum-smart-contracts/contracts/SimpleSmartContract.sol",
+    "exportedSymbols": {
+      "SimpleSmartContract": [
+        841
+      ]
+    },
+    "id": 842,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 809,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:32:3"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": "@title Blockchain Session\n@dev Store & retreive value in a variable",
+        "fullyImplemented": true,
+        "id": 841,
+        "linearizedBaseContracts": [
+          841
+        ],
+        "name": "SimpleSmartContract",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 811,
+            "name": "pokeCount",
+            "nodeType": "VariableDeclaration",
+            "scope": 841,
+            "src": "160:13:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_int256",
+              "typeString": "int256"
+            },
+            "typeName": {
+              "id": 810,
+              "name": "int",
+              "nodeType": "ElementaryTypeName",
+              "src": "160:3:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_int256",
+                "typeString": "int256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 814,
+            "name": "greeting",
+            "nodeType": "VariableDeclaration",
+            "scope": 841,
+            "src": "180:67:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 812,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "180:6:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "486920677579732121212057656c636f6d6520746f2074686520426c6f636b636861696e2073657373696f6e212121",
+              "id": 813,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "string",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "198:49:3",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_stringliteral_cf68fc6f9719044ad3f951518f506adc318407289fc60306f8a627e177935d98",
+                "typeString": "literal_string \"Hi guys!!! Welcome to the Blockchain session!!!\""
+              },
+              "value": "Hi guys!!! Welcome to the Blockchain session!!!"
+            },
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 823,
+              "nodeType": "Block",
+              "src": "339:44:3",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 821,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 817,
+                      "name": "pokeCount",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 811,
+                      "src": "350:9:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_int256",
+                        "typeString": "int256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "commonType": {
+                        "typeIdentifier": "t_int256",
+                        "typeString": "int256"
+                      },
+                      "id": 820,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "leftExpression": {
+                        "argumentTypes": null,
+                        "id": 818,
+                        "name": "pokeCount",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 811,
+                        "src": "362:9:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_int256",
+                          "typeString": "int256"
+                        }
+                      },
+                      "nodeType": "BinaryOperation",
+                      "operator": "+",
+                      "rightExpression": {
+                        "argumentTypes": null,
+                        "hexValue": "31",
+                        "id": 819,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "374:1:3",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_1_by_1",
+                          "typeString": "int_const 1"
+                        },
+                        "value": "1"
+                      },
+                      "src": "362:13:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_int256",
+                        "typeString": "int256"
+                      }
+                    },
+                    "src": "350:25:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "id": 822,
+                  "nodeType": "ExpressionStatement",
+                  "src": "350:25:3"
+                }
+              ]
+            },
+            "documentation": "@dev Increase the number of pokes",
+            "id": 824,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "poke",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 815,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "329:2:3"
+            },
+            "returnParameters": {
+              "id": 816,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "339:0:3"
+            },
+            "scope": 841,
+            "src": "316:67:3",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 831,
+              "nodeType": "Block",
+              "src": "533:35:3",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 829,
+                    "name": "pokeCount",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 811,
+                    "src": "551:9:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "functionReturnParameters": 828,
+                  "id": 830,
+                  "nodeType": "Return",
+                  "src": "544:16:3"
+                }
+              ]
+            },
+            "documentation": "@dev Get the number of getNumPokes\n@return Number of pokes",
+            "id": 832,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getNumPokes",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 825,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "504:2:3"
+            },
+            "returnParameters": {
+              "id": 828,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 827,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 832,
+                  "src": "528:3:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 826,
+                    "name": "int",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "528:3:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "527:5:3"
+            },
+            "scope": 841,
+            "src": "484:84:3",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 839,
+              "nodeType": "Block",
+              "src": "707:34:3",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 837,
+                    "name": "greeting",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 814,
+                    "src": "725:8:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "functionReturnParameters": 836,
+                  "id": 838,
+                  "nodeType": "Return",
+                  "src": "718:15:3"
+                }
+              ]
+            },
+            "documentation": "@dev Say hi to the class\n@return A greeting",
+            "id": 840,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "hello",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 833,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "668:2:3"
+            },
+            "returnParameters": {
+              "id": 836,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 835,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 840,
+                  "src": "692:13:3",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 834,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "692:6:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "691:15:3"
+            },
+            "scope": 841,
+            "src": "654:87:3",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 842,
+        "src": "122:622:3"
+      }
+    ],
+    "src": "0:744:3"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0xd7F09c3FcebAc768e4BBeDea06E364F12783899A",
+      "transactionHash": "0xcef9a51b7a8f82fe5a29302b40ea75b934e85001df1f33b0de2523c0c233df4b"
+    }
+  },
+  "schemaVersion": "3.3.2",
+  "updatedAt": "2020-11-14T18:43:46.460Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "details": "Store & retreive value in a variable",
+    "methods": {
+      "getNumPokes()": {
+        "details": "Get the number of getNumPokes",
+        "return": "Number of pokes"
+      },
+      "hello()": {
+        "details": "Say hi to the class",
+        "return": "A greeting"
+      },
+      "poke()": {
+        "details": "Increase the number of pokes"
+      }
+    },
+    "title": "Blockchain Session"
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

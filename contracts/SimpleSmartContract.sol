@@ -1,10 +1,10 @@
-pragma solidity >=0.4.22 <0.7.0;
+pragma solidity >=0.4.22 <0.8.0;
 
 /**
  * @title Blockchain Session
  * @dev Store & retreive value in a variable
  */
-contract EDEMSmartContract {
+contract SimpleSmartContract {
 
     int pokeCount;
     string greeting = "Hi guys!!! Welcome to the Blockchain session!!!";

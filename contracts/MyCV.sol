@@ -1,4 +1,4 @@
-pragma solidity >=0.4.22 <0.7.0;
+pragma solidity >=0.4.22 <0.8.0;
 
 /**
  * @title My CV
@@ -64,7 +64,7 @@ contract MyCV {
             msg.sender == owner,
             "Only the owner of this CV can add experiences!"
         );
-        return experiences.push(exp);
+        experiences.push(exp);
     }
     
     function getNumExperiences() public view returns (uint) {
@@ -82,7 +82,7 @@ contract MyCV {
             msg.sender == owner,
             "Only the owner of this CV can add courses!"
         );
-        return courses.push(exp);
+        courses.push(exp);
     }
     
     function getNumCourses() public view returns (uint) {
@@ -100,7 +100,7 @@ contract MyCV {
             msg.sender == owner,
             "Only the owner of this CV can add certifications!"
         );
-        return certifications.push(exp);
+        certifications.push(exp);
     }
     
     function getNumCertifications() public view returns (uint) {
